@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section  class="upload-container" >
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="./file.png" alt="" class="center" draggable="false">
+                <img src="./file.png" alt="" class="left" draggable="false">
+                <img src="./file.png" alt="" class="right" draggable="false">
+            </div>
+            <input type="file" id = "fileInput">
+            <div class="title">Drop Your Files Or <span class="browserBtn">Browse Here</span></div>
+        </div>
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+            <div class="inner-container">
+                <div class="title">uploading</div>
+                <div class="percentcontainer"><span id="percent">0%</span></div>
+                <div class="progress-bar">
+                </div>
+            </div>
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Link will expire after 24 hrs</p>
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly>
+                <img src="./icon.svg" alt="" id="copyBtn">
+            </div>
+            <p>Send via Email</p>
+            <div class="email-container">
+                <form id="emailFrom">
+                    <div class="filled">
+                        <label for="sender">Your Email</label>
+                        <input type="email" required name ="from- email" id="sender">
+                    </div>
+                    <div class="filled">
+                        <label for="receiver">Receiver Email</label>
+                        <input type="email" required name ="to - email" id="receiver">
+                    </div>
+                    <button  type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="bg-image"></div>
+    <div class="toast">happy to share</div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
